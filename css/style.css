@@ -1,0 +1,144 @@
+/* General reset and body styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+/* Header styling */
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+}
+/* Navigation menu */
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+/* Default nav links */
+header ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* "Choose location" button styling */
+header ul li:nth-child(7) a {
+  background-color: #ff4081; 
+  color: white;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* Style for the search icon inside nav */
+header ul li:last-child a img {
+  width: 20px;      /* smaller size for icon */
+  height: 20px;
+  object-fit: contain;
+  vertical-align: middle;
+  filter: invert(0); /* keep it black by default */
+  transition: filter 0.3s ease;
+}
+
+
+/* Container must be relative for absolute positioning inside main */
+main {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+  color: #333; /* default text color */
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+/* Video styling */
+.bg-video__content {
+  width: 100%;
+  max-height: 400px;
+  height: auto;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+/* Only overlay the paragraph with this class */
+.overlay-text {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-weight: bolder;
+  color: white;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  margin: 0;
+  pointer-events: none; /* so clicks pass through */
+}
+
+/* Container styling (image + text side by side) */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.image-section {
+  margin-right: 20px;
+}
+
+.phone {
+  width: 400px;
+  height: auto;
+}
+
+.text-section {
+  max-width: 500px;
+}
+
+/* Text inside container: reset colors to normal */
+.text-section h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.text-section p {
+  font-size: 16px;
+  color: #555;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #ff4081; /* Pink color */
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+/* Footer styling */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
